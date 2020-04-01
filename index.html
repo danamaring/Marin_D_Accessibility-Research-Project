@@ -8,29 +8,53 @@
     <link type="text/css" rel="stylesheet" href="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-skin/highlights-pink.css" media="all" />
     <link type="text/css" rel="stylesheet" href="https://ozplayer.global.ssl.fastly.net/3.5/transcript.css" media="all" />
     <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-core/mediaelement.min.js"></script>
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="images/logo_o.ico"> -->
+
+   <!-- CSS links -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Vue libraries -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <!-- Fonts links -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
     <title>Accessibility Research Assignment</title>
 </head>
 <body>
-    <section id="pets-trailer-section">
-        <figure id="frozen-trailer-container" class="ozplayer-container">
-            <div  data-responsive="frozen-trailer-container" data-controls="stack" class="ozplayer" id="frozen-trailer" data-transcript="frozen-trailer-transcript" >
-            <video  controls="controls" preload="none">
-            <source src="https://www.youtube.com/watch?v=suVQt0pfOLc" type="video/x-youtube"></source>
-            <track src="https://drive.google.com/file/d/1oYQPzPtP81azmzBj9YKFeHqx6JOLnecc/view?usp=sharing" kind="captions" srclang="en" default="default" ></track>
-            <track src="https://drive.google.com/file/d/1oYQPzPtP81azmzBj9YKFeHqx6JOLnecc/view?usp=sharing" kind="metadata" data-kind="transcript" srclang="en" ></track>
-            <div class="ozplayer-fallback"><ul><li><a href="https://www.youtube.com/watch?v=suVQt0pfOLc">Video for playback</a></li></ul></div>
-            </video>
-            </div>
-            <details class="ozplayer-expander" open="open">
-            <summary>Video Transcript</summary>
-            <div id="frozen-trailer-transcript" class="ozplayer-transcript"></div>
-            </details>
-        </figure>
-    </section>
+    <header>
+        <h1>THIS IS MY HEADER.</h1>
+        <nav>
+            <ul>
+                <li>
+                    <router-link to="/tvShow">TV SHOW</router-link>
+                </li>
+                <li>
+                    <router-link to="/movie">MOVIE</router-link>
+                </li>
+                <li>
+                    <router-link to="/audio">AUDIO</router-link>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app">
+
+        <router-view></router-view>
+    </main>
+    <footer>
+        <h1>THIS IS MY FOOTER</h1>
+    </footer>
 
     <!-- video player scripts -->
     <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-core/ozplayer.free.js"></script>
     <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-lang/en.js"></script>
     <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/config.js"></script>
+    <!-- component scripts -->
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
