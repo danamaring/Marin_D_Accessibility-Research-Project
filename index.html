@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- video player links -->
+    <link type="text/css" rel="stylesheet" href="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-core/ozplayer.min.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-skin/highlights-pink.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="https://ozplayer.global.ssl.fastly.net/3.5/transcript.css" media="all" />
+    <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-core/mediaelement.min.js"></script>
+    <title>Accessibility Research Assignment</title>
+</head>
+<body>
+    <section id="pets-trailer-section">
+        <figure id="frozen-trailer-container" class="ozplayer-container">
+            <div  data-responsive="frozen-trailer-container" data-controls="stack" class="ozplayer" id="frozen-trailer" data-transcript="frozen-trailer-transcript" >
+            <video  controls="controls" preload="none">
+            <source src="https://www.youtube.com/watch?v=suVQt0pfOLc" type="video/x-youtube"></source>
+            <track src="https://drive.google.com/file/d/1oYQPzPtP81azmzBj9YKFeHqx6JOLnecc/view?usp=sharing" kind="captions" srclang="en" default="default" ></track>
+            <track src="https://drive.google.com/file/d/1oYQPzPtP81azmzBj9YKFeHqx6JOLnecc/view?usp=sharing" kind="metadata" data-kind="transcript" srclang="en" ></track>
+            <div class="ozplayer-fallback"><ul><li><a href="https://www.youtube.com/watch?v=suVQt0pfOLc">Video for playback</a></li></ul></div>
+            </video>
+            </div>
+            <details class="ozplayer-expander" open="open">
+            <summary>Video Transcript</summary>
+            <div id="frozen-trailer-transcript" class="ozplayer-transcript"></div>
+            </details>
+        </figure>
+    </section>
+
+    <!-- video player scripts -->
+    <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-core/ozplayer.free.js"></script>
+    <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-lang/en.js"></script>
+    <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/config.js"></script>
+</body>
+</html>
