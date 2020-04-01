@@ -24,17 +24,24 @@
 <body>
     <header>
         <h1>THIS IS MY HEADER.</h1>
+        <nav>
+            <ul>
+                <li><a href="#tvShows">Tv Shows</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#audio-container">Music</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main id="app">
         <!-- Money Heist Trailer -->
-        <section>
+        <section id="tvShows">
             <h1>Link to Money Heist Trailer:</h1>
             <a href="https://www.youtube.com/watch?v=suVQt0pfOLc"></a>
             <figure id="money-heist-trailer-container" class="ozplayer-container">
                 <div  data-responsive="money-heist-trailer-container" data-controls="stack" class="ozplayer" id="money-heist-trailer" data-transcript="money-heist-trailer-transcript" >
                 <video  controls="controls" preload="none">
                 <source src="https://www.youtube.com/watch?v=fvCdLmxnkj0" type="video/x-youtube"></source>
-                <track src="money-heist-trailer.vtt" kind="captions" srclang="en" default="default" ></track>
+                <track src="captions/money-heist-trailer.vtt" kind="captions" srclang="en" default="default" ></track>
                 <!-- <track src="money-heist-trailer.vtt" kind="metadata" data-kind="transcript" srclang="en" ></track> -->
                 <div class="ozplayer-fallback"><ul><li><a href="https://www.youtube.com/watch?v=fvCdLmxnkj0">Video for playback</a></li></ul></div>
                 </video>
@@ -47,14 +54,14 @@
         </section>
 
         <!-- Frozen II Trailer -->
-        <section id="pets-trailer-section">
+        <section id="movies">
             <h1>Link to Frozen II Trailer:</h1>
             <a href="https://www.youtube.com/watch?v=suVQt0pfOLc"></a>
             <figure id="frozen-trailer-container" class="ozplayer-container">
                 <div  data-responsive="frozen-trailer-container" data-controls="stack" class="ozplayer" id="frozen-trailer" data-transcript="frozen-trailer-transcript" >
                 <video  controls="controls" preload="none">
                 <source src="https://www.youtube.com/watch?v=suVQt0pfOLc" type="video/x-youtube"></source>
-                <track src="frozen-trailer-captions.vtt" kind="captions" srclang="en" default="default" ></track>
+                <track src="captions/frozen-trailer-captions.vtt" kind="captions" srclang="en" default="default" ></track>
                 <!-- <track src="frozen-trailer-captions.vtt" kind="metadata" data-kind="transcript" srclang="en" ></track> -->
                 <div class="ozplayer-fallback"><ul><li><a href="https://www.youtube.com/watch?v=suVQt0pfOLc">Video for playback</a></li></ul></div>
                 </video>
@@ -67,6 +74,24 @@
         </section>
 
         <!-- Audio goes here -->
+            <figure id="audio-container" class="ozplayer-container">
+                <figcaption>Listen to Dance Monkey by Tones and I</figcaption>
+                <div  data-responsive="audio-container" data-controls="stack" class="ozplayer" id="audio" data-transcript="audio-transcript" >
+                <!-- <video  controls="controls" preload="none"> -->
+                <audio
+                    controls
+                    src="audio/dance-monkey_Tones-and-I.mp3">
+                </audio>
+                <track src="captions/dance-monkey-captions.vtt" kind="captions" srclang="en" default="default" ></track>
+                <!-- <track src="audio-captions.vtt" kind="metadata" data-kind="transcript" srclang="en" ></track> -->
+                <!-- <div class="ozplayer-fallback"><ul><li><a href="https://www.youtube.com/watch?v=suVQt0pfOLc">Video for playback</a></li></ul></div> -->
+                </video>
+                </div>
+                <details class="ozplayer-expander" open="open">
+                <summary>Video Transcript</summary>
+                <div id="audio-transcript" class="ozplayer-transcript"></div>
+                </details>
+            </figure>
     </main>
     <footer>
         <h1>THIS IS MY FOOTER</h1>
