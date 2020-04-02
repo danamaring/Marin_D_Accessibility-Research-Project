@@ -47,3 +47,58 @@ footer {
         letter-spacing: 2px;
     }
 }
+
+//media query 513px
+@media screen and (min-width: 32.0625em) {
+    footer {
+        #menu-footer {
+            ul {
+                li {
+                    a {
+                        padding: 0 3em;
+                    }
+                }
+            }
+        }
+
+        #social-media-footer {
+            ul {
+                padding-top: 5%;
+                padding-bottom: 3%;
+                
+                li {
+                    a {
+                        padding: 0 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//media query 1100px
+@media screen and (min-width: 68.75em) {
+    footer {
+        #menu-footer {
+            ul {
+                li {
+                    a {
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+
+        #social-media-footer {
+            ul {               
+                li {
+                    a {
+                        img {
+                            height: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -19,12 +19,10 @@
 }
 
 .ozplayer-expander {
-    summary {
-        width: 45%;
-    }
+    width: 100%;
 
     .ozplayer-transcript {
-        width: 42%;
+        width: 85.2%;
     }
 }
 
@@ -37,5 +35,45 @@
         color: black;
         margin-left: 5%;
         margin-bottom: 3%;
+    }
+}
+
+//media query 768px
+@media screen and (min-width: 48em) {
+    .ozplayer-expander {    
+        .ozplayer-transcript {
+            width: 93.2%;
+        }
+    }
+}
+
+
+//media query 810px
+@media screen and (min-width: 50.625em) {
+    #tvShows, #movies, #audio-container {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+//media query 1100px
+@media screen and (min-width: 68.75em) {
+    #tvShows, #movies, #audio-container {
+        width: 70%;
+        max-width: 54.3em;
+    }
+
+    .ozplayer-expander {
+        width: 100%;
+    
+        .ozplayer-transcript {
+            width: 94.4%;
+        }
     }
 }

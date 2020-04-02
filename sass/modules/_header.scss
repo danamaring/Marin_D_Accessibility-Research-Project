@@ -46,7 +46,7 @@ header {
         margin-left: 3%;
         background-color: $pink;
         position: absolute;
-        margin-top: -10%;
+        margin-top: -39px;
         z-index: -1;
     }
 
@@ -56,5 +56,128 @@ header {
         margin-left: 5%;
         margin-top: 2%;
         width: 90%;
+    }
+}
+
+//media query 400px
+@media screen and (min-width: 25em) {
+    header {
+        p {
+            width: 60%;
+        }
+    }
+}
+
+//media query 512px
+@media screen and (min-width: 32em) {
+    header {
+        h1 {
+            margin-left: 10%;
+        }
+
+        #decoration {
+            margin-left: 8%;
+        }
+
+        p {
+            margin-left: 10%;
+        }
+    }
+}
+
+//media query 625px
+@media screen and (min-width: 39.0625em) {
+    header {
+        p {
+            width: 50%;
+        }
+    }
+}
+
+//media query 810px
+@media screen and (min-width: 50.625em) {
+    header {
+        h1 {
+            font-size: 8em;
+        }
+
+        #decoration {
+            width: 19em;
+            height: 30px;
+            margin-top: -50px;
+        }
+    }
+}
+
+//media query 900px
+@media screen and (min-width: 56.25em) {
+    header {
+        p {
+            width: 400px;
+        }
+
+        nav {
+            ul {
+                margin-top: 30px;
+                li {
+                    a {
+                        img {
+                            padding-right: 60px;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//media query 1111px
+@media screen and (min-width: 69.4375em) {
+        nav {
+            ul {
+                li {
+                    a {
+                        img {
+                            height: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+//media query 1200px
+@media screen and (min-width: 75em) {
+    header {
+        h1 {
+            margin-left: 15%;
+        }
+
+        #decoration {
+            margin-left: 13.7%;
+        }
+
+        p {
+            margin-left: 15%;
+        }
+    }
+}
+
+//media query 1400px
+@media screen and (min-width: 87.5em) {
+    header {
+        nav {
+            margin-top: -2.5%;
+        }
+    }
+}
+
+//media query 1800px
+@media screen and (min-width: 112.5em) {
+    header {
+        nav {
+            margin-top: -2%;
+        }
     }
 }
