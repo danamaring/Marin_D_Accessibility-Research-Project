@@ -6,3 +6,10 @@
 body {
     margin: 10px 0 0 0;
 }
+
+//media query 500px
+@media screen and (min-width: 31.25em) {
+    body {
+        margin-top: 5%;
+    }
+}
