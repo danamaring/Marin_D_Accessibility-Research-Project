@@ -9,34 +9,47 @@
     <link type="text/css" rel="stylesheet" href="https://ozplayer.global.ssl.fastly.net/3.5/transcript.css" media="all" />
     <script type="text/javascript" src="https://ozplayer.global.ssl.fastly.net/3.5/ozplayer-core/mediaelement.min.js"></script>
     <!-- Favicon -->
-    <!-- <link rel="icon" type="image/png" sizes="16x16" href="images/logo_o.ico"> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
 
    <!-- CSS links -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Fonts links -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ojb7sna.css">
 
-    <title>Accessibility Research Assignment</title>
+    <title>Media for everyone</title>
 </head>
 <body>
+    <!-- Header starts -->
     <header>
-        <h1>THIS IS MY HEADER.</h1>
+        <a href="#tvShows" id="skip">Skip to the content.</a>
         <nav>
             <ul>
-                <li><a href="#tvShows">Tv Shows</a></li>
-                <li><a href="#movies">Movies</a></li>
-                <li><a href="#audio-container">Music</a></li>
+                <li><a href="#">
+                    <img src="images/icon-facebook.svg" alt="Facebook Link">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/icon-dribble.svg" alt="Dribble Link">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/icon-instagram.svg" alt="Instagram Link">
+                </a></li>
             </ul>
         </nav>
+        <h1>hello.</h1>
+        <div id="decoration"></div>
+        <p>
+            Welcome! “Media for everyone” is a research project that implements best practices to make a website fully accessible for everyone.
+        </p>
     </header>
+
+    <!-- Main starts -->
     <main id="app">
-        <!-- Money Heist Trailer -->
+        <!-- Tv Shows -->
         <section id="tvShows">
-            <h1>Link to Money Heist Trailer:</h1>
-            <a href="https://www.youtube.com/watch?v=suVQt0pfOLc"></a>
+            <h1>tv shows</h1>
+            <a href="https://www.youtube.com/watch?v=suVQt0pfOLc">Link to Money Heist Trailer</a>
             <figure id="money-heist-trailer-container" class="ozplayer-container">
                 <div  data-responsive="money-heist-trailer-container" data-controls="stack" class="ozplayer" id="money-heist-trailer" data-transcript="money-heist-trailer-transcript" >
                 <video  controls="controls" preload="none">
@@ -53,10 +66,10 @@
             </figure>
         </section>
 
-        <!-- Frozen II Trailer -->
+        <!-- Movies -->
         <section id="movies">
-            <h1>Link to Frozen II Trailer:</h1>
-            <a href="https://www.youtube.com/watch?v=suVQt0pfOLc"></a>
+            <h1>movies</h1>
+            <a href="https://www.youtube.com/watch?v=suVQt0pfOLc">Link to Frozen II Trailer</a>
             <figure id="frozen-trailer-container" class="ozplayer-container">
                 <div  data-responsive="frozen-trailer-container" data-controls="stack" class="ozplayer" id="frozen-trailer" data-transcript="frozen-trailer-transcript" >
                 <video  controls="controls" preload="none">
@@ -73,9 +86,12 @@
             </figure>
         </section>
 
-        <!-- Audio goes here -->
+        <!-- Music -->
             <figure id="audio-container" class="ozplayer-container">
+                <h1>music</h1>
                 <figcaption>Listen to Dance Monkey by Tones and I</figcaption>
+                <a href="https://www.youtube.com/watch?v=q0hyYWKXF0Q">Link to Dance Monkey by Tones and I</a>
+                <br><br>
                 <div  data-responsive="audio-container" data-controls="stack" class="ozplayer" id="audio" data-transcript="audio-transcript" >
                 <!-- <video  controls="controls" preload="none"> -->
                 <audio
@@ -93,8 +109,42 @@
                 </details>
             </figure>
     </main>
+
+    <!-- footer starts -->
     <footer>
-        <h1>THIS IS MY FOOTER</h1>
+        <nav id="menu-footer">
+            <ul>
+                <li>
+                    <a href="#tvShows">tv shows</a>
+                </li>
+                <li>
+                    <a href="#movies">movies</a>
+                </li>
+                <li>
+                    <a href="#audio-container">music</a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="social-media-footer">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-facebook.svg" alt="Facebook link">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-dribble.svg" alt="Dribble link">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-instagram.svg" alt="Instagram link">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h3>Dana Marin &copy; 2020</h3>
     </footer>
 
     <!-- video player scripts -->

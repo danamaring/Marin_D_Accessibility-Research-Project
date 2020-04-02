@@ -1,0 +1,60 @@
+@import 'modules/_vars';
+
+header {
+    a {
+        margin-top: 5%;
+    }
+    #skip {
+        font-family: $main;
+        color: black;
+        font-size: 1em;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+
+    nav {
+        float: right;
+        margin-top: -4%;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+
+            li {
+                a {
+                    img {
+                        height: 1.3em;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-family: $main;
+        font-size: 6em;
+        color: black;
+        margin-left: 5%;
+        margin-bottom: 0;
+    }
+    
+    #decoration {
+        height: 21px;
+        width: 14em;
+        margin-left: 3%;
+        background-color: $pink;
+        position: absolute;
+        margin-top: -10%;
+        z-index: -1;
+    }
+
+    p {
+        font-family: $main;
+        font-size: 1em;
+        margin-left: 5%;
+        margin-top: 2%;
+        width: 90%;
+    }
+}

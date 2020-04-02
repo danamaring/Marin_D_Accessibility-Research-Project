@@ -1,0 +1,49 @@
+footer {
+    margin-top: 25%;
+    #menu-footer {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                padding-left: 0;
+                li {
+                    a {
+                        text-decoration: none;
+                        font-family: $main;
+                        font-size: 1em;
+                        color: black;
+                        padding: 0 1em;
+                    }
+                }
+            }
+    }
+
+    #social-media-footer {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+
+            li {
+                a {
+                    img {
+                        height: 1em;
+                        padding: 0 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-family: $main;
+        font-size: 0.8em;
+        padding: 5px 0;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+}

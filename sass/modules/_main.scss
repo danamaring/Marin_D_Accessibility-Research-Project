@@ -1,0 +1,41 @@
+//tv shows
+
+#tvShows, #movies, #audio-container {
+    h1 {
+        font-family: $main;
+        font-size: 2em;
+        background-color: black;
+        color: white;
+        padding-left: 5%;
+        margin-top: 20%;
+        margin-bottom: 4%;
+    }
+    a {
+        color: black;
+        font-family: $main;
+        font-size: 1em;
+        margin-left: 5%;
+    }
+}
+
+.ozplayer-expander {
+    summary {
+        width: 45%;
+    }
+
+    .ozplayer-transcript {
+        width: 42%;
+    }
+}
+
+#audio-container {
+    margin-left: 0;
+    margin-right: 0;
+
+    figcaption {
+        font-family: $main;
+        color: black;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+}
